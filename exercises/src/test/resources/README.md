@@ -1,6 +1,6 @@
-initial-state
+define-a-class
 
-# Exercise 0 > Initial State
+# Exercise 1 > Define a class
 
 In the course video recordings, the instructor uses a `man e` command in the sbt interactive session to display exercise instructions. 
 
