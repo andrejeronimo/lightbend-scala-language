@@ -7,4 +7,8 @@ class Time(val hours: Int, val minutes: Int) {
   def minus(that: Time): Int = {
     asMinutes - that.asMinutes
   }
+
+  def -(that: Time): Int = {
+    minus(that)
+  }
 }
