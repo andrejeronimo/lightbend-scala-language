@@ -2,7 +2,7 @@ package com.lightbend.training.scalatrain
 
 import scala.math.Integral.Implicits._
 
-class Time(val hours: Int = 0, val minutes: Int = 0) {
+case class Time(hours: Int = 0, minutes: Int = 0) {
 
   require(hours >=0 && hours <= 23)       // Verify that hours is within 0 and 23
   require(minutes >= 0 && minutes <= 59)  // Verify that minutes is within 0 and 59
@@ -22,6 +22,6 @@ object Time {
 
   def fromMinutes(totalMinutes: Int): Time = {
     val (hours, minutes) = totalMinutes /% 60
-    new Time(hours, minutes)
+    Time(hours, minutes)
   }
 }
